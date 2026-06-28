@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Tracker</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="settings-container">
+
+    <!-- Back -->
+    <a href="dashboard.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+    </a>
+
+    <!-- Title -->
+    <h1 class="settings-title">
+        <i class="fa-solid fa-syringe"></i>
+        Vaccination Tracker
+    </h1>
+
+    <!-- Selection Card -->
+    <div class="setting-card ai-card">
+
+        <h3 class="ai-heading">
+            Select Age Group
+        </h3>
+
+        <select class="blood-select" id="ageGroup">
+
+            <option value="">Select Age Group</option>
+            <option>0 - 5 Years</option>
+            <option>6 - 18 Years</option>
+            <option>19 - 40 Years</option>
+            <option>Above 40 Years</option>
+
+        </select>
+
+        <button class="ai-btn" id="vaccineBtn">
+
+            <i class="fa-solid fa-syringe"></i>
+            Check Vaccines
+
+        </button>
+
+    </div>
+
+    <br>
+
+    <!-- Result -->
+
+    <div class="hospital-card">
+
+        <h3>
+            <i class="fa-solid fa-notes-medical"></i>
+            Recommended Vaccines
+        </h3>
+
+        <p id="vaccineResult">
+
+            Select an age group and click
+            <strong>Check Vaccines</strong>.
+
+        </p>
+
+    </div>
+
+    <br>
+
+    <!-- Disclaimer -->
+
+    <div class="ai-disclaimer">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        Vaccination schedule shown here is for educational purposes.
+        Please consult your healthcare provider for official vaccination recommendations.
+
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

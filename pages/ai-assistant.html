@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Health Assistant</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="settings-container">
+
+        <!-- Back Button -->
+        <a href="dashboard.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+        </a>
+
+        <!-- Page Title -->
+        <h1 class="settings-title">
+            <i class="fa-solid fa-robot"></i>
+            AI Health Assistant
+        </h1>
+
+        <!-- Input Section -->
+        <div class="setting-card ai-card">
+
+            <h3 class="ai-heading">
+                Describe your health issue
+            </h3>
+
+            <textarea
+                class="ai-textarea"
+                id="symptoms"
+                placeholder="Example: I have fever, headache, cough and body pain..."></textarea>
+
+            <!-- Quick Symptoms -->
+
+            <div class="quick-symptoms">
+
+                <span class="symptom-chip">🤒 Fever</span>
+                <span class="symptom-chip">🤧 Cold</span>
+                <span class="symptom-chip">😷 Cough</span>
+                <span class="symptom-chip">🤕 Headache</span>
+                <span class="symptom-chip">🤢 Vomiting</span>
+                <span class="symptom-chip">🤒 Body Pain</span>
+                <span class="symptom-chip">🤧 Sore Throat</span>
+                <span class="symptom-chip">🤕 Stomach Pain</span>
+
+            </div>
+
+            <button class="ai-btn" id="analyzeBtn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Analyze Symptoms
+
+            </button>
+
+        </div>
+
+        <br>
+
+        <!-- Response Section -->
+
+        <div class="setting-card ai-card">
+
+            <h3>
+                <i class="fa-solid fa-comment-medical"></i>
+                AI Response
+            </h3>
+
+            <p class="response-text" id="aiResponse">
+
+                Your health analysis will appear here after clicking
+                <strong>Analyze Symptoms</strong>.
+
+            </p>
+
+        </div>
+
+        <br>
+
+        <!-- Disclaimer -->
+
+        <div class="ai-disclaimer">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <strong>Disclaimer:</strong>
+
+            This AI Assistant provides only general health guidance based on the symptoms you enter.
+            It is **not a medical diagnosis**. Please consult a qualified doctor for proper medical advice,
+            diagnosis and treatment.
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

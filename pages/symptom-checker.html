@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="settings-container">
+
+    <!-- Back Button -->
+    <a href="dashboard.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+    </a>
+
+    <!-- Heading -->
+    <h1 class="settings-title">
+        <i class="fa-solid fa-stethoscope"></i>
+        Symptom Checker
+    </h1>
+
+    <!-- Symptom Selection -->
+    <div class="setting-card ai-card">
+
+        <h3 class="ai-heading">
+            Select Your Symptoms
+        </h3>
+
+        <div class="symptom-list">
+
+            <label><input type="checkbox" value="Fever"> Fever</label>
+            <label><input type="checkbox" value="Cold"> Cold</label>
+            <label><input type="checkbox" value="Cough"> Cough</label>
+            <label><input type="checkbox" value="Headache"> Headache</label>
+            <label><input type="checkbox" value="Body Pain"> Body Pain</label>
+            <label><input type="checkbox" value="Stomach Pain"> Stomach Pain</label>
+            <label><input type="checkbox" value="Vomiting"> Vomiting</label>
+            <label><input type="checkbox" value="Dizziness"> Dizziness</label>
+
+        </div>
+
+        <br>
+
+        <button class="ai-btn" id="symptomBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Check Symptoms
+        </button>
+
+    </div>
+
+    <br>
+
+    <!-- Result -->
+
+    <div class="setting-card ai-card">
+
+        <h3>
+            <i class="fa-solid fa-notes-medical"></i>
+            Result
+        </h3>
+
+        <p class="response-text" id="symptomResult">
+
+            Select your symptoms and click
+            <strong>Check Symptoms</strong>.
+
+            <br><br>
+
+            Possible condition and basic health advice will be displayed here.
+
+        </p>
+
+    </div>
+
+    <br>
+
+    <!-- Disclaimer -->
+
+    <div class="ai-disclaimer">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        The Symptom Checker provides only general health guidance.
+        It is not a substitute for professional medical advice.
+
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

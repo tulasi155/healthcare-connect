@@ -1,0 +1,834 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Main Container */
+.container{
+    text-align:center;
+}
+
+/* Logo */
+.logo i{
+    font-size:110px;
+    color:#0B74FF;
+    margin-bottom:20px;
+}
+
+/* Project Title */
+h1{
+    font-size:52px;
+    font-weight:700;
+    color:#0B74FF;
+    margin-bottom:10px;
+}
+
+/* Tagline */
+.tagline{
+    font-size:20px;
+    color:#666;
+    margin-bottom:45px;
+}
+
+/* Settings & Dashboard */
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-bottom:40px;
+}
+
+.menu-card{
+    width:150px;
+    height:150px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+.menu-card i{
+    font-size:45px;
+    color:#0B74FF;
+    margin-bottom:15px;
+}
+
+.menu-card span{
+    font-size:20px;
+    font-weight:600;
+}
+
+/* Emergency */
+.emergency-card{
+    width:220px;
+    height:80px;
+    margin:auto;
+    background:#ff4d4d;
+    color:white;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(255,0,0,.25);
+}
+
+.emergency-card:hover{
+    transform:scale(1.05);
+}
+
+.emergency-card i{
+    font-size:28px;
+}
+
+.emergency-card span{
+    font-size:24px;
+    font-weight:600;
+}
+/* ================= SETTINGS PAGE ================= */
+
+.settings-container{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.back-btn{
+    text-decoration:none;
+    color:#0B74FF;
+    font-size:18px;
+    font-weight:600;
+}
+
+.settings-title{
+    text-align:center;
+    color:#0B74FF;
+    margin:30px 0;
+    font-size:42px;
+}
+
+.settings-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.setting-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#fff;
+    padding:20px 25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.setting-card:hover{
+    transform:translateY(-5px);
+}
+
+.setting-card i{
+    font-size:30px;
+    color:#0B74FF;
+    width:40px;
+    text-align:center;
+}
+
+.setting-card span{
+    font-size:22px;
+    font-weight:500;
+}
+/* ================= DASHBOARD PAGE ================= */
+
+.dashboard-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.dashboard-title{
+    text-align:center;
+    color:#0B74FF;
+    font-size:42px;
+    margin:30px 0;
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.dashboard-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(11,116,255,0.18);
+}
+
+.dashboard-card i{
+    font-size:50px;
+    color:#0B74FF;
+    margin-bottom:18px;
+}
+
+.dashboard-card h3{
+    font-size:20px;
+    color:#333;
+    font-weight:600;
+}
+/* ================= AI ASSISTANT PAGE ================= */
+
+textarea{
+    width:100%;
+    padding:15px;
+    border:2px solid #d9d9d9;
+    border-radius:15px;
+    font-size:18px;
+    font-family:'Poppins',sans-serif;
+    outline:none;
+    transition:.3s;
+}
+
+textarea:focus{
+    border-color:#0B74FF;
+    box-shadow:0 0 10px rgba(11,116,255,.2);
+}
+
+.ai-btn{
+    background:#0B74FF;
+    color:#fff;
+    border:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.ai-btn:hover{
+    background:#095fd1;
+    transform:translateY(-2px);
+}
+
+.response-box{
+    margin-top:25px;
+    background:#f8fbff;
+    border-left:5px solid #0B74FF;
+    padding:20px;
+    border-radius:12px;
+    line-height:1.8;
+}
+/* ================= AI HEALTH ASSISTANT ================= */
+
+.ai-card{
+    display:block;
+    cursor:default;
+}
+
+.ai-heading{
+    margin-bottom:20px;
+    color:#0B74FF;
+    font-size:24px;
+    font-weight:600;
+}
+
+.ai-textarea{
+    width:100%;
+    height:180px;
+    padding:18px;
+    border:1px solid #dcdcdc;
+    border-radius:15px;
+    font-size:18px;
+    outline:none;
+    resize:none;
+    transition:.3s;
+    margin-top:10px;
+}
+
+.ai-textarea:focus{
+    border-color:#0B74FF;
+    box-shadow:0 0 10px rgba(11,116,255,.15);
+}
+
+.quick-symptoms{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:20px 0;
+}
+
+.symptom-chip{
+    background:#EAF3FF;
+    color:#0B74FF;
+    padding:10px 16px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.symptom-chip:hover{
+    background:#0B74FF;
+    color:#fff;
+}
+
+.ai-btn{
+    width:100%;
+    padding:15px;
+    background:#0B74FF;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.ai-btn:hover{
+    background:#085ec7;
+}
+
+.response-text{
+    margin-top:20px;
+    color:#666;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.ai-disclaimer{
+    background:#FFF8E6;
+    border-left:5px solid #FFC107;
+    padding:18px;
+    border-radius:10px;
+    color:#555;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.ai-disclaimer i{
+    color:#FFC107;
+    margin-right:8px;
+}
+.dashboard-card{
+    text-decoration: none;
+    color: inherit;
+}
+/* ================= SYMPTOM CHECKER ================= */
+
+.symptom-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin:20px 0 30px;
+}
+
+.symptom-list label{
+    background:#f5f9ff;
+    padding:15px;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    border:1px solid #dce9ff;
+    transition:0.3s;
+}
+
+.symptom-list label:hover{
+    background:#0B74FF;
+    color:white;
+}
+
+.symptom-list input{
+    margin-right:10px;
+    transform:scale(1.2);
+}
+/* ================= DISEASE INFORMATION ================= */
+
+.disease-select{
+    width:100%;
+    padding:15px;
+    margin:20px 0;
+    border:1px solid #dcdcdc;
+    border-radius:12px;
+    font-size:18px;
+    outline:none;
+    background:#fff;
+    transition:0.3s;
+}
+
+.disease-select:focus{
+    border-color:#0B74FF;
+    box-shadow:0 0 8px rgba(11,116,255,0.2);
+}
+/* ================= HOSPITALS PAGE ================= */
+
+.hospital-search{
+    width:100%;
+    padding:15px;
+    margin:20px 0;
+    border:1px solid #dcdcdc;
+    border-radius:12px;
+    font-size:18px;
+    outline:none;
+    transition:0.3s;
+}
+
+.hospital-search:focus{
+    border-color:#0B74FF;
+    box-shadow:0 0 8px rgba(11,116,255,0.2);
+}
+
+.hospital-card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.hospital-card:hover{
+    transform:translateY(-5px);
+}
+
+.hospital-card h3{
+    color:#0B74FF;
+    margin-bottom:15px;
+}
+
+.hospital-card p{
+    font-size:17px;
+    margin:10px 0;
+    color:#555;
+}
+
+.hospital-btn{
+    margin-top:15px;
+    padding:12px 22px;
+    background:#0B74FF;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.hospital-btn:hover{
+    background:#085ec7;
+}
+/* ================= EMERGENCY SERVICES ================= */
+
+.emergency-card-box{
+    background:#ffffff;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.emergency-card-box:hover{
+    transform:translateY(-5px);
+}
+
+.emergency-card-box h3{
+    color:#d62828;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.emergency-card-box p{
+    font-size:18px;
+    color:#555;
+    margin:10px 0;
+}
+
+.call-btn{
+    margin-top:15px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#d62828;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.call-btn:hover{
+    background:#b71c1c;
+}
+/* ================= EMERGENCY SERVICES ================= */
+
+const callButtons = document.querySelectorAll(".call-btn");
+
+callButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        const number = this.getAttribute("data-number");
+
+        const confirmCall = confirm(
+            "Do you want to call Emergency Number " + number + "?"
+        );
+
+        if (confirmCall) {
+
+            window.location.href = "tel:" + number;
+
+        }
+
+    });
+
+});
+/* ================= BLOOD BANK ================= */
+
+.blood-select{
+    width:100%;
+    padding:15px;
+    margin:20px 0;
+    border:1px solid #dcdcdc;
+    border-radius:12px;
+    font-size:18px;
+    outline:none;
+    background:#fff;
+    transition:0.3s;
+}
+
+.blood-select:focus{
+    border-color:#d62828;
+    box-shadow:0 0 8px rgba(214,40,40,0.2);
+}
+
+#bloodResult{
+    font-size:18px;
+    color:#444;
+    line-height:1.8;
+    margin-top:15px;
+}
+
+.blood-available{
+    color:#198754;
+    font-weight:600;
+}
+
+.blood-notavailable{
+    color:#d62828;
+    font-weight:600;
+}
+/* ================= BLOOD BANK ================= */
+
+const bloodSearchBtn = document.getElementById("bloodSearchBtn");
+
+if (bloodSearchBtn) {
+
+    bloodSearchBtn.addEventListener("click", function () {
+
+        const bloodGroup = document.getElementById("bloodGroup").value;
+        const result = document.getElementById("bloodResult");
+
+        switch (bloodGroup) {
+
+            case "A+":
+                result.innerHTML = `
+                <span class="blood-available">🟢 Blood Available</span><br><br>
+                🏥 Apollo Blood Bank<br>
+                📍 Chennai<br>
+                📞 +91 9876543210
+                `;
+                break;
+
+            case "A-":
+                result.innerHTML = `
+                <span class="blood-available">🟢 Blood Available</span><br><br>
+                🏥 Government Blood Bank<br>
+                📍 Chennai<br>
+                📞 +91 9123456780
+                `;
+                break;
+
+            case "B+":
+                result.innerHTML = `
+                <span class="blood-available">🟢 Blood Available</span><br><br>
+                🏥 Red Cross Blood Centre<br>
+                📍 Chennai<br>
+                📞 +91 9988776655
+                `;
+                break;
+
+            case "B-":
+                result.innerHTML = `
+                <span class="blood-notavailable">🟠 Limited Stock</span><br><br>
+                Please contact the nearest blood bank immediately.
+                `;
+                break;
+
+            case "AB+":
+                result.innerHTML = `
+                <span class="blood-available">🟢 Blood Available</span><br><br>
+                🏥 Lifeline Blood Centre<br>
+                📍 Chennai<br>
+                📞 +91 9090909090
+                `;
+                break;
+
+            case "AB-":
+                result.innerHTML = `
+                <span class="blood-notavailable">🔴 Very Rare Blood Group</span><br><br>
+                Please contact the emergency blood bank.
+                `;
+                break;
+
+            case "O+":
+                result.innerHTML = `
+                <span class="blood-available">🟢 Blood Available</span><br><br>
+                🏥 City Blood Bank<br>
+                📍 Chennai<br>
+                📞 +91 9876501234
+                `;
+                break;
+
+            case "O-":
+                result.innerHTML = `
+                <span class="blood-notavailable">🔴 Emergency Required</span><br><br>
+                O- blood is currently unavailable.
+                Please contact nearby hospitals immediately.
+                `;
+                break;
+
+            default:
+                result.innerHTML =
+                "⚠️ Please select a blood group first.";
+
+        }
+
+    });
+
+}
+/* ================= RMP SERVICES ================= */
+
+.doctor-card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.doctor-card:hover{
+    transform:translateY(-5px);
+}
+
+.doctor-card h3{
+    color:#0B74FF;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.doctor-card p{
+    margin:10px 0;
+    color:#555;
+    font-size:17px;
+}
+
+.book-btn{
+    margin-top:15px;
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    background:#0B74FF;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.book-btn:hover{
+    background:#085ec7;
+}
+/* ================= VACCINATION TRACKER ================= */
+
+#vaccineResult{
+    font-size:18px;
+    color:#444;
+    line-height:1.8;
+    margin-top:15px;
+}
+
+.vaccine-complete{
+    color:#198754;
+    font-weight:600;
+}
+
+.vaccine-pending{
+    color:#d62828;
+    font-weight:600;
+}
+/* ================= HEALTH CAMPS ================= */
+
+.camp-card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.camp-card:hover{
+    transform:translateY(-5px);
+}
+
+.camp-card h3{
+    color:#16a34a;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.camp-card p{
+    margin:10px 0;
+    color:#555;
+    font-size:17px;
+}
+
+.register-btn{
+    margin-top:15px;
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    background:#16a34a;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.register-btn:hover{
+    background:#15803d;
+}
+/* ================= HEALTH AWARENESS ================= */
+
+.awareness-card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:.3s;
+    border-left:6px solid #0B74FF;
+}
+
+.awareness-card:hover{
+    transform:translateY(-5px);
+}
+
+.awareness-card h3{
+    color:#0B74FF;
+    margin-bottom:15px;
+    font-size:23px;
+}
+
+.awareness-card p{
+    color:#555;
+    font-size:17px;
+    line-height:1.8;
+}
+/* ================= GOVERNMENT SCHEMES ================= */
+
+.scheme-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    border-left:6px solid #ff9800;
+    transition:.3s;
+}
+
+.scheme-card:hover{
+    transform:translateY(-5px);
+}
+
+.scheme-card h3{
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+.scheme-card p{
+    color:#555;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.scheme-btn{
+    margin-top:15px;
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.scheme-btn:hover{
+    background:#e68900;
+}
+/* ================= CONTACT SUPPORT ================= */
+
+#userMessage{
+    margin-top:20px;
+    transition:.3s;
+}
+
+#userMessage:focus{
+    border-color:#0B74FF;
+    outline:none;
+    box-shadow:0 0 8px rgba(11,116,255,.2);
+}
